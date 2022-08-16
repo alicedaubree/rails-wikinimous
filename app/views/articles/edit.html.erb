@@ -1,0 +1,11 @@
+<h1>Update Article</h1>
+
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %><br>
+  <%= f.text_field :title %><br><br>
+  <%= f.label :content %><br>
+  <%= f.text_field :content %><br><br>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Go back to menu", articles_path %>
